@@ -1,0 +1,333 @@
+/* Add CSS styles for your web site here and use them in index.html. */
+/*
+  Add style rules for the body of a your webpage.
+  Note: These rules will be applied to all elements.
+*/
+/* Customize Dark Mode Theme */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+/* Ensure all text elements change color in dark mode */
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6,
+.dark-mode p, .dark-mode a, .dark-mode ol, .dark-mode ul {
+  color: white;
+}
+/* Style the body */
+body {
+  background-color: white; /* Background color */
+  background-image: url(''); /* Placeholder for background image */
+  font-family: Arial, sans-serif; /* Default font family */
+  font-size: 16px; /* Default font size */
+  color: black; /* Default text color */
+  line-height: 1.6; /* Spacing between lines */
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  Style Text: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+h1 {
+  color: greenyellow; /* Text color */
+  text-align: center; /* Center align text */
+  font-size: 36px; /* Larger font size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  margin-bottom: 20px; /* Space below heading */
+  font-weight: bold; /* Bold text */
+}
+
+h2 {
+  color: darkgreen;
+  font-size: 28px;
+  text-align: left; /* Align text to the left */
+  border-bottom: 2px solid #ccc; /* Add a border under the heading */
+  padding-bottom: 10px; /* Padding below text */
+  margin-top: 20px;}
+
+h3 {
+  color: darkblue;
+    font-size: 20px;
+    text-transform: uppercase; /* Make text uppercase */
+    margin-top: 15px;
+    padding-left: 10px; /* Add left padding */
+  }
+
+  h4, h5, h6 {
+    color: teal;
+    font-size: 21px;
+    text-align: justify; /* Justify text */
+    margin: 10px 0;
+}
+
+p {    
+  color: black;
+    font-family: 'Georgia', serif; /* Different font */
+    font-size: 18px; /* Larger paragraph font */
+    line-height: 1.8; /* Increased line height */
+    text-align: left; /* Left-align text */
+    margin: 10px 0; /* Spacing between paragraphs */
+    padding: 5px 10px; /* Padding inside paragraphs */
+}
+
+a:link{
+  color: blue;
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+}
+
+a:visited {
+  color: purple;
+  font-style: italic; /* Italicize visited links */
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline; /* Add underline on hover */
+  background-color: burlywood; /* Light background on hover */
+}
+
+a:active {
+  color: orange;
+    text-decoration: none;
+    font-size: 17px; /* Increase font size when clicked */
+}
+
+/*
+  Style Lists: Styles added to the ol or ul style rulesets affect the entire
+  list, while styles added to the li style ruleset affect individual list items
+*/
+
+
+ol {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+ol li {
+  font-size: 18px; /* Increase font size for items */
+  color: darkblue; /* Set text color to dark blue */
+  margin-bottom: 5px; /* Space between list items */
+}
+
+
+ul {
+  list-style-type: circle; /* Circular bullets */
+    margin-left: 20px; /* Add space on the left */
+    padding: 10px;
+    background-color: #e0f7fa; /* Light teal background */
+}
+
+ul li {
+  font-size: 16px; /* Font size for items */
+  color: darkgreen; /* Set text color to dark green */
+  margin-bottom: 5px; /* Space between list items */
+}
+
+/*
+  Style Buttons: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+/* dark-mode button÷\ */
+button {
+  background-color:white;
+  border: none;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+button:hover {
+  background-color:cornflowerblue; /* Darker background on hover */
+}
+
+/* Select and style elements by class name or ID */
+
+.important {
+  color: blueviolet;
+  font-family: 'Georgia', serif;
+  font-weight: bold; /* Bold text */
+  background-color: #f9f9f9; /* Light background color */
+  padding: 10px;
+  border: 2px solid blueviolet; /* Border around the element */
+  border-radius: 5px; /* Rounded corners */
+}
+/* <- this will require you to declare a class="important" in one of your HTML elements */
+#interesting {
+  color: aquamarine;
+  font-size: 20px; /* Larger font size */
+  background-color: #333; /* Dark background color */
+  padding: 10px;
+  border-radius: 10px; /* Rounded corners */
+  text-align: center; /* Center the text */
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* Box shadow */
+} 
+/* <- this will require you to declare a id="interesting" in one of your HTML elements */
+
+/* Style the header */
+.header {
+  background-color: #333; /* Dark background for the header */
+  color: white; /* White text color */
+  padding-top: 15px; /* Add padding at the top */
+  margin-bottom: 20px; /* Add margin at the bottom */
+  display: flex; /* Flexbox layout to position elements */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Vertically center items */
+  text-align: center; /* Center-align text in the header */
+}
+
+/* Style the left section of the header (e.g., title) */
+#header-left {
+  width: 50%; /* 50% of the header width */
+    text-align: left; /* Left-align text */
+}
+
+/* Style the right section of the header (e.g., buttons) */
+#header-right {
+  width: 50%; /* 50% of the header width */
+    display: flex; /* Flexbox to position buttons */
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 10px; /* Space between buttons */
+}
+
+/* Style the header image */
+#header-img {
+  width: 40px; /* Set image width */
+    max-width: 60px; /* Cap the maximum image width */
+    margin-left: 10px; /* Left margin for spacing */
+    margin-right: 20px; /* Right margin for spacing */
+    border-radius: 50%; /* Circular image */
+}
+
+/* Style the buttons in the header */
+.header-button {
+  background-color:cadetblue; /* Button background color */
+  text-align: center; /* Center text inside buttons */
+  font-size: 16px; /* Font size for buttons */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding around button content */
+  margin: 5px; /* Add margin around buttons */
+  border: 2px solid transparent; /* Transparent border to avoid shifting */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change to pointer on hover */
+}
+
+.header-button:hover {
+  background-color:cornflowerblue; /* Darker background on hover */
+}
+
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+}
+
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+
+#sign-petition {
+  display: flex;
+  flex-direction: row; /* Keep form fields in a row */
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  gap: 20px; /* Space between form fields */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+}
+
+#sign-now-button {
+  flex-basis: 100%; /* Allow button to take its natural width */
+  width: 20em; /* Ensure the width is determined by content */
+  align-self: flex-start; /* Align the button to the left */
+  margin-top: 10px; /* Space above the button */
+  padding: 5px 10px; /* Adjust padding for button size */
+  font-size: 14px; /* Adjust font size */
+}
+
+/* Highlight invalid form inputs with enhanced styling */
+.error {
+  border-style: solid;
+  border-width: 3px; /* Thicker border */
+  border-color: red;
+  background-color: #ffe6e6; /* Softer pink */
+  color: #b30000; /* Dark red text */
+  padding: 5px; /* Space inside the input */
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Revealable class: starting state for animations */
+.revealable{
+  position: relative; /* Allows the element to move independently */
+  transform: translateY(150px); /* Move down by 150px */
+  opacity: 0; /* Make invisible */
+  transition: all 2s ease;  /* Smooth transition matching JavaScript settings */
+}
+
+/* Active class: final state for animations */
+.revealable.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* Navbar fixes */
+.header {
+  position: sticky; /* Ensure it stays at the top of the viewport */
+  top: 0; /* Align to the top of the page */
+  z-index: 100; /* Place the navbar above other elements */
+  background-color: var(--your-navbar-bg-color, white); /* Optional: Add a background */
+}
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue; /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

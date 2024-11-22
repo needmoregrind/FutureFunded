@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FutureFunded</title> <!-- the content here will only show in the tab and in the metadata about the page -->
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="dark-mode">
+
+<!-- Header container -->
+<div class="header">
+    <!-- Left section: Title and image -->
+    <div id="header-left">
+        <img src="img/Logo.png" alt="Logo" id="header-img"> <!-- Header image -->
+    FutureFunded    
+</div>
+ 
+    <!-- Right section: Buttons -->
+    <div id="header-right">
+        <a href="#about" class="header-button">About</a>
+        <a href="#impact" class="header-button">Impact</a>
+        <!--- Add to Nav Bar --->
+ <button id="theme-button">Toggle Dark Mode</button></li>
+    </div>
+</div>
+   
+
+    <!--- Headings --->
+    <h1 id="interesting">FutureFunded</h1>
+    <h3>Empowering students to find educational opportunities with ease.</h3>
+
+    <button type="button" class="important">Search</button>
+    <button type="button" class="important">Filter</button>
+
+    <!--- About --->
+  <div class = 'revealable'>
+    <h2 id="about">What is FutureFunded?</h2>
+    <p>Finding scholarships and educational resources can be a time-consuming task for students. 
+        Many struggle to locate opportunities due to the fact that they are scattered across different websites and platforms. 
+        FutureFunded simplifies the process by bringing all relevant opportunities into one easily accessible place. 
+        Whether you're looking for scholarships, or educational programs, we're here to help students unlock their potential.
+    </p>
+  </div>
+
+    <!--- Impact --->
+  <div class = 'revealable'>
+    <h2 id="impact">Impact!</h2>
+
+    <img src="img/FutureFunded.png" alt="Website Interface" width="300" height="300"/>
+    <h3>FutureFunded website interface</h3>
+    <p>A user friendly website to navigate through educational resources.
+    </p>
+  </div>
+
+
+    <img src="img/EducationalResources.jpeg" alt="EducationalResources" width="300" height="300"/>
+    <h3>EducationalResources</h3>
+    <p>Place where educational opportunities are gathered.
+    </p>
+
+ <div class="petition" id="petition"> 
+
+  <div class = 'revealable'>
+    <h2>Sign Our Petition 📢</h2>
+    <div class="petition-container">
+
+      <div class="petition-para">
+        <!-- info goes here -->
+         <p> Join us in advocating for easier access to scholarships and educational resources. 
+            Many students miss out on life-changing opportunities simply because they can't find them. 
+            Help us petition for a centralized platform that brings these resources together, 
+            empowering students everywhere to achieve their educational goals!</p>
+      </div>
+    </div>
+
+      <div class="signatures" id="signatures-section">
+        <p>🖊️ DJ from Brooklyn supports this.</p>
+        <p>🖊️ Amy from Queens supports this.</p>
+        <p>🖊️ Teresa from Harlem supports this.</p>
+      </div>
+
+    </div>
+
+  <!-- Sign Petition Form -->
+  <form id="sign-petition">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="hometown">Hometown:</label>
+      <input type="text" id="hometown" name="hometown" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="comment">Message:</label>
+      <textarea id="comment" name="comment" rows="3"></textarea>
+    </div>
+    <button id="sign-now-button" type="button">Sign Now</button>
+  </form>
+</div>
+
+<!-- Modal -->
+<div id="thanks-modal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div id="modal-text-container">
+      <p id="thanks-modal-content">Thank you for supporting our cause! Your contribution means a lot.</p>
+    </div>
+    <img src = 'img/thankyou.png' alt="Thank You" />
+  </div>
+</div>
+
+
+ <!--- Add above the closing body tag </body> --->
+ <script src="index.js"></script>
+</body>
+
+</html>
