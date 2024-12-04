@@ -1,2 +1,2 @@
 # FutureFunded
-FutureFunded simplifies the search for scholarships and educational resources by gathering opportunities into one accessible platform.
+FutureFunded is a work-in-progress project aimed at simplifying the search for scholarships and educational resources by bringing various opportunities together into one easy-to-use platform. Its goal is to provide a space where students can easily find funding and learning tools, reducing the time and effort spent searching. As the project continues, it seeks to improve access to educational opportunities and make it easier for students to discover resources that meet their needs.
